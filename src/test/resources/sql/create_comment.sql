@@ -1,0 +1,1 @@
+insert into comment (id, status, text, vk_id) values (1, 'NOT_VIEWED', 'test', 1);

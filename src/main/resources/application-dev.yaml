@@ -7,16 +7,16 @@ vk:
     numberOfPosts: 100
 
 scheduled:
-  cron: "0 30 4 * * *"
+  cron: "0 0/1 * * * *"
 
 application:
-  domain: {DOMAIN}
+  domain: https://tgsupbot.reliab.tech
 
 spring:
   jpa:
     generate-ddl: false
     hibernate:
-      ddl-auto: validate
+      ddl-auto: none
       javax:
         persistence:
           query:
@@ -44,4 +44,5 @@ server:
       enabled: false
   forward-headers-strategy: framework
   servlet:
-    context-path: api/vk
+    context-path: /admin/api/vk
+#  port: 8080
